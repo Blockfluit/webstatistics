@@ -1,0 +1,106 @@
+input {
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+th,
+td {
+    width: 100px;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+th,
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+
+th img {
+    width: 50px;
+    height: 50px;
+}
+
+
+td {
+    text-align: center;
+}
+
+.sort-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-frame {
+    position: relative;
+}
+
+.item-bottom {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.item-top {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    padding: 2px 0 0 2px;
+}
+
+@media (max-width: 750px) {
+
+    thead,
+    tbody {
+        width: 90%;
+    }
+
+    th,
+    tr {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 650px) {
+    input {
+        height: 30px;
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    th img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item-bottom {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item-top {
+        width: 36px;
+        height: 36px;
+    }
+
+    .sort-button {
+        flex-direction: column;
+    }
+}

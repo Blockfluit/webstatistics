@@ -1,0 +1,47 @@
+header h2 {
+    text-transform: capitalize;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+li a {
+    flex-grow: 1;
+    align-self: flex-start;
+    padding-right: 30px;
+}
+
+.player-heads {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px
+}
+
+.gray {
+    color: gray;
+}
+
+@media (max-width: 650px) {
+    ul {
+        width: 90%;
+    }
+}

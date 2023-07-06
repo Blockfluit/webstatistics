@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/player.css">
+    <link id="icon" rel="icon" href="/assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Player</title>
+</head>
+<body>
+    <header id="header">
+        <a href="/" id="player-page">
+            <div class="container-horizontal">
+                <img id="player-head">
+                <h1 id="player-name">Player</h1>
+                <h2 id="status" class="offline">offline</h2>
+            </div>
+        </a>
+        <div class="container-horizontal">
+            <h2>Player Information</h2>
+        </div>
+    </header>
+    <main class="background scrollable" id="player-info">
+        <div class="container-item-left">
+            <div class="container-join-date">
+                <div><h3>First joined:</h3><h3 style="color: gray" id="firstJoined">never</h3></div>
+                <div><h3>Last Played:</h3><h3 style="color: gray" id="lastPlayed">never</h3></div>
+            </div>
+            <img id="player-skin">
+            <div class="lower-bar">
+                <h1 id="level"></h1>
+                <div class="container-horizontal" id="foodLevel"></div>
+                <div class="container-horizontal" id="health"></div>
+            </div>
+        </div>
+        <div class="container-item-right">
+            <div class="container-inventory" id="armour"></div>
+            <div class="container-carrying" id="carrying"></div>
+        </div>
+    </main>
+    <nav id="nav">
+        <div class="container-nav-buttons">
+            <a href="/" class="nav-button"><img src="/assets/nav/leaderboard.jpg"></a>
+            <a class="nav-button" id="player"><img src="/assets/nav/player.jpg"></a>
+        </div>
+        <div class="container-nav-buttons">
+            <a class="nav-button" id="general"><img src="/assets/nav/general.jpg"></a>
+            <a class="nav-button" id="mobs"><img src="/assets/nav/mobs.jpg"></a>
+            <a class="nav-button" id="items"><img src="/assets/nav/items.jpg"></a>
+        </div>
+    </nav>
+
+    <script src="/scripts/player.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+h3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h3 img {
+    width: 25px;
+    height: 25px;
+    margin-left: 2px
+}
+
+ul {
+    width: 600px;
+    padding: 5px
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gray h3 {
+    color: gray;
+}
+
+@media (max-width: 650px) {
+    ul {
+        width: 90%;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/items.css">
+    <link id="icon" rel="icon" href="/assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Items</title>
+</head>
+<body>
+    <header id="header">
+        <a href="/" id="player-page">
+            <div class="container-horizontal">
+                <img id="player-head">
+                <h1 id="player-name">Player</h1>
+            </div>
+        </a>
+        <div class="container-horizontal">
+            <h2>Item Statistics</h2>
+            <input class="background" type="text" id="search-value" placeholder="Search item...">
+        </div>
+    </header>
+    <table class="background" id="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="sort-button" id="times-mined-0"><img src="/assets/nav/times_mined.jpg" title="Times Mined"><img src="/assets/nav/arrow_down.png"></button></th>
+                <th class="sort-button" id="times-broken-1"><img src="/assets/nav/times_broken.jpg" title="Times Broken"></th>
+                <th class="sort-button" id="times-crafted-2"><img src="/assets/nav/times_crafted.jpg" title="Times Crafted"></th>
+                <th class="sort-button" id="times-used-3"><img src="/assets/nav/times_used.jpg" title="Times Used"></th>
+                <th class="sort-button" id="picked-up-4"><img src="/assets/nav/picked_up.jpg" title="Picked Up"></th>
+                <th class="sort-button" id="dropped-5"><img src="/assets/nav/dropped.jpg" title="Dropped"></th>
+            </tr>
+        </thead>
+        <tbody class="scrollable" id="table-body">
+        </tbody>
+    </table>
+    <nav id="nav">
+        <div class="container-horizontal">
+            <a href="/" class="nav-button"><img src="/assets/nav/leaderboard.jpg"></a>
+            <a class="nav-button" id="player"><img src="/assets/nav/player.jpg"></a>
+        </div>
+        <div class="container-horizontal">
+            <a class="nav-button" id="general"><img src="/assets/nav/general.jpg"></a>
+            <a class="nav-button" id="mobs"><img src="/assets/nav/mobs.jpg"></a>
+            <a class="nav-button" id="items"><img src="/assets/nav/items.jpg"></a>
+        </div>
+    </nav>
+
+    <script src="/scripts/items.js" type="module"></script>
+</body>
+</html>

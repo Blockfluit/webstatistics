@@ -1,0 +1,5 @@
+name: WebStats
+version: '${project.version}'
+main: me.blockfluit.webstats.WebStats
+api-version: '1.20'
+description: Displays in-game stats on the web

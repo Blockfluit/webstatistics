@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Minecraft', Arial, Verdana, sans-serif;
+    color: white;
+    font-weight: 200;
+    text-shadow: 4px 4px rgb(30, 30, 30);
+}
+
+html {
+    cursor: url('/assets/cursor.png'), auto;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: url(/assets/background.jpg);
+    background-repeat: repeat;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 5px 5px rgb(30, 30, 30);
+}
+
+h2 {
+    font-size: 35px;
+    text-shadow: 4px 4px rgb(30, 30, 30);
+}
+
+h3,
+dt,
+dd,
+ul,
+li,
+td {
+    font-size: 25px;
+    text-shadow: 3px 3px rgb(30, 30, 30);
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+h4,
+h5 {
+    text-shadow: 2px 2px rgb(30, 30, 30);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover h4 {
+    transition: all 0.3s ease;
+    color: gold;
+}
+
+img {
+    display: block;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+header img {
+    image-rendering: pixelated;
+    width: 50px;
+    height: auto;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+header a:hover {
+    text-decoration: none
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0 5px 0;
+    width: 100%;
+}
+
+nav a img {
+    width: 200px;
+    border: rgb(0, 0, 0) 3px solid;
+    margin: 2px 0 2px 0;
+}
+
+nav a img:hover {
+    border: rgb(255, 255, 255) 3px solid;
+}
+
+.container-nav-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    background-color: rgb(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.scrollable {
+    overflow-y: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 15px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background: lightgray;
+    box-shadow: inset -10px -10px 0px -8px gray;
+
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 40px;
+        text-shadow: 5px 5px rgb(30, 30, 30);
+    }
+
+    h2 {
+        font-size: 25px;
+        text-shadow: 4px 4px rgb(30, 30, 30);
+    }
+
+    h3,
+    dt,
+    dd,
+    ul,
+    li,
+    td {
+        font-size: 20px;
+        text-shadow: 3px 3px rgb(30, 30, 30);
+    }
+
+    nav a img {
+        width: 150px;
+    }
+
+    .background {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a img {
+        width: 120px;
+    }
+}
